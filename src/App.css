@@ -7,6 +7,38 @@
   pointer-events: none;
 }
 
+.chatroom-container {
+  margin-left: 10%;
+  margin-right: 10%;
+  width: 80%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-left: 0%;
+  padding-right: 0%;
+}
+
+.chatroom-field {
+  width: 100%;
+
+  flex-flow: 1;
+  padding-left: 0%;
+  padding-right: 0%;
+}
+
+.chatroom-field-input {
+  box-sizing: border-box;
+  width: 100%;
+  outline: 1px solid black;
+}
+
+.chatroom-display {
+  height: 90%;
+  width: 100%;
+  outline: 1px solid black;
+
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
