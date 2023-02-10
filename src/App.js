@@ -60,7 +60,10 @@ function App() {
       return (
         <div className='chatroom-container'>
           <div className='chatroom-display'>
-            {messages}
+            {props.messages.map(
+              (string, index) => (
+                <div key={index}>{string}</div>
+              ))}
           </div >
           <div className='chatroom-field'>
             <input
@@ -81,8 +84,8 @@ function App() {
 
 
   return (
-    <div style={{width: '100%', height: '400px'}}>
-      <Chat/>
+    <div style={{width: '100%', height: '400px', marginTop: '5%'}}>
+      <Chat messages={messages}/>
     </div>
   );
 }
